@@ -31,7 +31,7 @@ const navData = [
     },
 ];
 
-function NavBar() {
+function NavBar({cartItems}) {
 
     const itemLinks = navData.map(item => (
         <li key={item.id}><a href={item.path}>{item.name}</a></li>
@@ -59,7 +59,9 @@ function NavBar() {
                     </ul>
                 </div>
                 <div className="navbar-end gap-8">
-                    <FaCartArrowDown className='text-2xl' />
+                    <div className='relative'>
+                        <FaCartArrowDown className='text-2xl' /> <span className='absolute -top-4 left-3 bg-amber-500 px-1.5 rounded-full text-sm font-bold '>{cartItems.length}</span>
+                    </div>
                     <a className='btn' href="3">Get Started</a>
                 </div>
             </div>

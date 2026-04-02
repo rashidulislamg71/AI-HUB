@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaCheck } from 'react-icons/fa';
 
-function ProductCard({ product }) {
+function ProductCard({ product, addToCart }) {
     const [isSubscribe, setIsSubscribe] = useState(false);
 
     const formattingDescription = (wordChr) => {
@@ -11,10 +11,8 @@ function ProductCard({ product }) {
     }
 
     const handleSubscribeBtn = (product) => {
-        console.log(product)
-
+        addToCart(product)
         setIsSubscribe(true);
-
     }
 
     return (
@@ -34,7 +32,7 @@ function ProductCard({ product }) {
                 <h3 className='text-xl font-bold text-green-700'>$ {product.price}/month</h3>
 
                 <button onClick={() => handleSubscribeBtn(product)} className={`mt-4 btn w-full bg-linear-to-r  text-white font-bold rounded-full hover:from-teal-500  transition-all duration-300 ${isSubscribe ? "bg-teal-600" : " from-green-500 to-teal-400"}`}>
-                    {isSubscribe ? <> <FaCheck className='text-sm text-white' />  Subscribed </> : " Subscribe"}
+                    {isSubscribe ? <> <FaCheck className='text-sm text-white' />  Subscribed </> : " Subscribe Now "}
                 </button>
             </div>
         </div>
