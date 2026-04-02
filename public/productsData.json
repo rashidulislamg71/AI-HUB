@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "id": "01",
+            "name": "ChatGPT",
+            "description": "AI chatbot that generates human like responses, helps with coding, writing, learning, problem solving, and conversations across many topics easily",
+            "price": 20,
+            "img": "https://img.olhardigital.com.br/wp-content/uploads/2023/01/chatgpt_assistente.jpg",
+            "status": "popular"
+        },
+        {
+            "id": "02",
+            "name": "YouChat 2.0",
+            "description": "Smart AI assistant with voice support, multi platform access, fast answers, helpful suggestions, and interactive chatting experience for everyday users",
+            "price": 15,
+            "img": "https://i.ytimg.com/vi/_LZzfpjepoY/maxresdefault.jpg",
+            "status": "new"
+        },
+        {
+            "id": "03",
+            "name": "Google Bard",
+            "description": "Google powered AI chatbot designed for answering questions, generating ideas, assisting tasks, and providing accurate, real time information quickly online",
+            "price": 18,
+            "img": "https://i.blogs.es/7b41f4/google-bard/1366_2000.jpeg",
+            "status": "favorite"
+        },
+        {
+            "id": "04",
+            "name": "Microsoft Bing",
+            "description": "Search engine with AI features providing instant answers, web results, images, videos, and smart suggestions for better browsing experience online",
+            "price": 10,
+            "img": "https://s3.amazonaws.com/images.seroundtable.com/bing-indexing-issues-1603799404.jpg",
+            "status": "mostWanted"
+        },
+        {
+            "id": "05",
+            "name": "Chatsonic",
+            "description": "AI tool for content creation, customer support, marketing tasks, generating ideas, writing texts, and automating workflows efficiently for businesses",
+            "price": 22,
+            "img": "https://startupstash.com/wp-content/uploads/2022/12/1671615999_chatsonic_cover_thumbnail.png",
+            "status": "favorite"
+        },
+        {
+            "id": "06",
+            "name": "Jasper Chat",
+            "description": "AI chatbot focused on marketing, content writing, brand voice creation, campaign ideas, and helping businesses grow faster with automation tools",
+            "price": 25,
+            "img": "https://www.proremodeler.com/sites/proremodeler/files/Jasper%20copy.jpg",
+            "status": "new"
+        },
+        {
+            "id": "07",
+            "name": "Character AI",
+            "description": "Platform for creating AI characters, interactive conversations, storytelling, entertainment, and unique experiences with customizable personalities for users online",
+            "price": 17,
+            "img": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2023/01/maxresdefault.jpg",
+            "status": "popular"
+        },
+        {
+            "id": "08",
+            "name": "DialoGPT",
+            "description": "Conversational AI model by Microsoft for engaging chats, generating responses, understanding context, and improving communication between humans and machines",
+            "price": 12,
+            "img": "https://huggingface.co/front/thumbnails/dialogpt.png",
+            "status": "mostWanted"
+        },
+        {
+            "id": "09",
+            "name": "Rytr",
+            "description": "AI writing assistant for generating content, copywriting, emails, blogs, ads, and improving productivity with fast and accurate text generation features",
+            "price": 14,
+            "img": "https://bochickenstore.com/storage/large/ban-tai-khoan-rytr-g_1652155324.png",
+            "status": "favorite"
+        },
+        {
+            "id": "10",
+            "name": "GitHub Copilot",
+            "description": "AI coding assistant helping developers write code faster, suggest functions, complete lines, debug issues, and improve programming productivity across projects",
+            "price": 30,
+            "img": "https://github.githubassets.com/images/modules/site/social-cards/copilot-ga.png",
+            "status": "popular"
+        }
+    ]
+}
