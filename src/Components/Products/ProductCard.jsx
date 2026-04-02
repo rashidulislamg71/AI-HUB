@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { FaCheck } from 'react-icons/fa';
 
 function ProductCard({ product }) {
+    const [isSubscribe, setIsSubscribe] = useState(false);
 
     const formattingDescription = (wordChr) => {
         return product.description.length > wordChr
             ? product.description.slice(0, wordChr) + "..."
             : product.description;
+    }
+
+    const handleSubscribeBtn = (product) => {
+        console.log(product)
+
+        setIsSubscribe(true);
+
     }
 
     return (
@@ -24,8 +33,8 @@ function ProductCard({ product }) {
                 <p className='text-sm text-gray-500'>{formattingDescription(80)}</p>
                 <h3 className='text-xl font-bold text-green-700'>$ {product.price}/month</h3>
 
-                <button className='mt-4 btn w-full bg-linear-to-r from-green-500 to-teal-400 text-white font-bold rounded-full hover:from-teal-500  transition-all duration-300'>
-                    Subscribe
+                <button onClick={() => handleSubscribeBtn(product)} className={`mt-4 btn w-full bg-linear-to-r  text-white font-bold rounded-full hover:from-teal-500  transition-all duration-300 ${isSubscribe ? "bg-teal-600" : " from-green-500 to-teal-400"}`}>
+                    {isSubscribe ? <> <FaCheck className='text-sm text-white' />  Subscribed </> : " Subscribe"}
                 </button>
             </div>
         </div>

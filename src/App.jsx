@@ -1,5 +1,5 @@
 
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 import NavBar from './Components/NavBar/NavBar'
 import "./App.css"
 import HeroBanner from './Components/HeroBanner/HeroBanner'
@@ -30,9 +30,9 @@ function App() {
         </section>
 
         <section>
-         <Suspense  fallback ={<span>Loading...</span>}>
-           <Products promiseProducts={promiseProducts} />
-         </Suspense>
+          <Suspense fallback={<span>Loading...</span>}>
+            <Products promiseProducts={promiseProducts} />
+          </Suspense>
         </section>
       </main>
 
