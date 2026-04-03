@@ -18,12 +18,27 @@ function ProductCard({ product, addToCart }) {
     return (
         <div className='group border border-gray-300 rounded-xl overflow-hidden shadow-lg '>
 
-            <div className='w-full bg-gray-200 overflow-hidden'>
+            <div className='w-full bg-gray-200 overflow-hidden relative'>
                 <img
                     className='h-40 w-40 m-auto object-contain transform group-hover:scale-110 transition duration-300'
                     src={product.img}
                     alt={product.name}
                 />
+                {/* badge  */}
+                {
+                    product.status === "popular" && <p className={`${product.status === "popular" ? "text-green-600 bg-green-200 border border-green-600" : ""} text-center rounded-full  text-[12px] font-bold w-fit px-3 absolute top-2 right-2 `} >{product.status.toUpperCase()}</p>
+                }
+                {
+                    product.status === "favorite" && <p className={`${product.status === "favorite" ? "text-orange-500 bg-orange-200 border border-orange-500" : ""} text-center rounded-full  text-[12px] font-bold w-fit px-3 absolute top-2 right-2 `} >{product.status.toUpperCase()}</p>
+                }
+                {
+                    product.status === "mostWanted" && <p className={`${product.status === "mostWanted" ? "text-red-500 bg-red-200 border border-red-500" : 
+                        '' } text-center rounded-full  text-[12px] font-bold w-fit px-3 absolute top-2 right-2 `} >{product.status.toUpperCase()}</p>
+                }
+                {
+                    product.status === "new"  && <p className={`${product.status === "new" ? "text-amber-300 bg-amber-200 border border-y-amber-300" : 
+                        '' } text-center rounded-full  text-[12px] font-bold w-fit px-3 absolute top-2 right-2 `} >{product.status.toUpperCase()}</p>
+                }
             </div>
 
             <div className='p-5 flex flex-col gap-2'>
